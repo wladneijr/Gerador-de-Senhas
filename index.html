@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senhas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="card">
+        <h1>Gerador de Senhas</h1>
+        <p class="subtitulo">Crie senhas fortes e aleatórias em segundos</p>
+
+        <div class="resultado-box">
+            <input type="text" name="pass" id="pass" placeholder="Sua senha aparecerá aqui" readonly>
+            <button type="button" class="btn-copiar" onclick="copiar()">Copiar</button>
+        </div>
+
+        <div class="controle-grupo">
+            <label for="carac">Quantidade de caracteres:</label>
+            <input type="number" name="carac" id="carac" min="1" max="32" value="12">
+        </div>
+
+        <button type="button" class="btn-gerar" onclick="gerarSenha()">Gerar Senha</button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
